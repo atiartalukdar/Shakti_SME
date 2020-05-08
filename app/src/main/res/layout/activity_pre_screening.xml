@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp"
+    android:orientation="vertical"
+    tools:context=".prescreening.PreScreening">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ভোটার আইডি কার্ড এর ছবি (প্রথম পাতা)"
+        />
+    <ImageView
+        android:id="@+id/nid_1st_page"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/round_corner"
+        android:layout_marginBottom="@dimen/newLeadMarginBottom"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ভোটার আইডি কার্ড এর ছবি (দ্বিতীয় পাতা)"
+        />
+
+    <ImageView
+        android:id="@+id/nid_2nd_page"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/round_corner"
+        android:layout_marginBottom="@dimen/newLeadMarginBottom"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/nid_number"/>
+    <EditText
+        android:id="@+id/nid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/newLeadEditTextSize"
+        android:hint="@string/editTextHint"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:inputType="number"
+        android:background="@drawable/round_corner"
+        android:layout_marginBottom="@dimen/newLeadMarginBottom"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/date_of_birth"/>
+    <LinearLayout
+        android:id="@+id/dateOfBirthLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_corner"
+        android:layout_marginBottom="@dimen/newLeadMarginBottom"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/dateOfBirth"
+            android:layout_width="529dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/newLeadMarginBottom"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:hint="DD/MM/YYYY"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:textSize="@dimen/newLeadEditTextSize" />
+
+        <EditText
+            android:id="@+id/age"
+            android:gravity="right"
+            android:textAlignment="center"
+            android:maxLines="2"
+            android:enabled="false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/newLeadMarginBottom"
+            android:textSize="10sp"
+            android:hint="__"
+            android:paddingTop="10dp"
+            android:layout_marginRight="20dp"
+            />
+
+
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/prescreeningNext1"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Next"
+        android:gravity="center"
+        android:background="@drawable/round_corner"
+        android:layout_gravity="right"
+        android:textSize="20sp"
+        />
+</LinearLayout>
+
+
+
+</ScrollView>

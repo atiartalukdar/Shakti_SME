@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp"
+    android:gravity="center|top"
+    android:orientation="vertical"
+    tools:context=".loanInformation.salaryAndRental.LoanIncomeBasedIncomeActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:id="@+id/name"
+            android:text="Full Name"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:id="@+id/memberID"
+            android:text="Member ID: 0000"
+            />
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/lineColor" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:gravity="center"
+            android:layout_marginBottom="20dp"
+            android:text="@string/income_based_income_details"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/income_based_income_source" />
+        <Spinner
+            android:id="@+id/income_based_income_source"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/newLeadMarginBottom"
+            android:background="@drawable/round_corner"
+            android:hint="@string/editTextHint"
+            android:inputType="number"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:textSize="@dimen/newLeadEditTextSize" />
+
+
+        <LinearLayout
+            android:id="@+id/salaryLiniarLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/income_based_job_sector" />
+            <RadioGroup
+                android:id="@+id/radiogroupJobSector"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/newLeadMarginBottom"
+                android:background="@drawable/round_corner"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:paddingLeft="20dp"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp">
+
+                <RadioButton
+                    android:id="@+id/radioBtnGovtJob"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/colorGreen"
+                    android:checked="false"
+                    android:text="@string/income_based_job_type_govt" />
+
+                <RadioButton
+                    android:id="@+id/radioBtnNonGovtJob"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:buttonTint="@color/colorGreen"
+                    android:checked="false"
+                    android:text="@string/income_based_job_type_non_govt" />
+
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/income_based_job_type" />
+            <RadioGroup
+                android:id="@+id/radioGroupJobType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/newLeadMarginBottom"
+                android:background="@drawable/round_corner"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingLeft="20dp"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp">
+
+                <RadioButton
+                    android:id="@+id/radioBtnEmployee_parmanent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/colorGreen"
+                    android:checked="false"
+                    android:text="@string/gunogoto_parmanent_employee" />
+
+                <RadioButton
+                    android:id="@+id/radioBtnEmployee_temporary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:checked="false"
+                    android:buttonTint="@color/colorGreen"
+                    android:text="@string/gunogoto_temporary_employee" />
+
+            </RadioGroup>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/income_based_basic_salary" />
+            <EditText
+                android:id="@+id/income_based_basic_salary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/newLeadMarginBottom"
+                android:background="@drawable/round_corner"
+                android:hint="@string/editTextHint"
+                android:inputType="number"
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:textSize="@dimen/newLeadEditTextSize" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/income_based_Gross_salary" />
+            <EditText
+                android:id="@+id/income_based_Gross_salary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/newLeadMarginBottom"
+                android:background="@drawable/round_corner"
+                android:hint="@string/editTextHint"
+                android:inputType="number"
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:textSize="@dimen/newLeadEditTextSize" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/income_based_net_salary" />
+            <EditText
+                android:id="@+id/income_based_net_salary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/newLeadMarginBottom"
+                android:background="@drawable/round_corner"
+                android:hint="@string/editTextHint"
+                android:inputType="number"
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:textSize="@dimen/newLeadEditTextSize" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/income_based_receive_salary_bank" />
+            <RadioGroup
+                android:id="@+id/radiogroup_bank_deposit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/newLeadMarginBottom"
+                android:background="@drawable/round_corner"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:paddingLeft="20dp"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp">
+
+                <RadioButton
+                    android:id="@+id/radioBtn_bank_yes"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/colorGreen"
+                    android:checked="false"
+                    android:text="@string/income_expence_yes" />
+
+                <RadioButton
+                    android:id="@+id/radioBtn_bank_no"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:buttonTint="@color/colorGreen"
+                    android:checked="false"
+                    android:text="@string/income_expence_no" />
+
+            </RadioGroup>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/rentLiniarLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/income_based_income_on_house_rent" />
+            <EditText
+                android:id="@+id/income_based_income_on_house_rent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/newLeadMarginBottom"
+                android:background="@drawable/round_corner"
+                android:hint="@string/editTextHint"
+                android:inputType="number"
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:textSize="@dimen/newLeadEditTextSize" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/income_based_income_on_house_age" />
+            <EditText
+                android:id="@+id/income_based_income_on_house_age"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/newLeadMarginBottom"
+                android:background="@drawable/round_corner"
+                android:hint="@string/editTextHint"
+                android:inputType="number"
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:maxLength="3"
+                android:textSize="@dimen/newLeadEditTextSize" />
+
+
+        </LinearLayout>
+
+        <!--Total Asset Price related to business-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:textSize="20sp"
+                android:textColor="@color/greenDark"
+                android:layout_gravity="center"
+
+                android:text="@string/income_based_income_total"
+                />
+            <TextView
+                android:id="@+id/income_based_income_total"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:textSize="30sp"
+                android:textColor="@color/greenDark"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/saveBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/round_corner"
+            android:gravity="center"
+            android:text="Save"
+            android:onClick="saveBtn"
+            android:textSize="20sp" />
+
+
+    </LinearLayout>
+
+</ScrollView>

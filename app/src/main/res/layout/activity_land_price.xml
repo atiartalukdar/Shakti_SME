@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:layout_margin="20dp"
+    android:gravity="center|top"
+    android:orientation="vertical"
+    tools:context=".loanInformation.common.LoanPropertyValueActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:id="@+id/name"
+            android:text="Full Name"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:id="@+id/memberID"
+            android:text="Member ID: 0000"
+            />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/lineColor" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:gravity="center"
+            android:layout_marginBottom="20dp"
+            android:text="@string/biz_info_land_price"/>
+
+
+        <!--Own Land-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/land_price_own_land" />
+        <EditText
+            android:id="@+id/land_price_own_land"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/newLeadMarginBottom"
+            android:background="@drawable/round_corner"
+            android:hint="@string/editTextHint"
+            android:inputType="number"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:textSize="@dimen/newLeadEditTextSize" />
+
+
+        <!--rented land-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/land_price_rented_land" />
+        <EditText
+            android:id="@+id/land_price_rented_land"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/newLeadMarginBottom"
+            android:background="@drawable/round_corner"
+            android:hint="@string/editTextHint"
+            android:inputType="number"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:textSize="@dimen/newLeadEditTextSize" />
+
+
+        <!--Furnitures price-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/land_price_furniture_price" />
+        <EditText
+            android:id="@+id/land_price_furniture_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/newLeadMarginBottom"
+            android:background="@drawable/round_corner"
+            android:hint="@string/editTextHint"
+            android:inputType="number"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:textSize="@dimen/newLeadEditTextSize" />
+
+
+        <!--Machinaries price-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/land_price_machineries_price" />
+        <EditText
+            android:id="@+id/land_price_machineries_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/newLeadMarginBottom"
+            android:background="@drawable/round_corner"
+            android:hint="@string/editTextHint"
+            android:inputType="number"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:textSize="@dimen/newLeadEditTextSize" />
+
+
+        <!--other -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/land_price_others" />
+        <EditText
+            android:id="@+id/land_price_others"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/newLeadMarginBottom"
+            android:background="@drawable/round_corner"
+            android:hint="@string/editTextHint"
+            android:inputType="number"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:textSize="@dimen/newLeadEditTextSize" />
+
+
+        <!--Asset improvements costs -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/land_price_asset_improvement_cost" />
+        <EditText
+            android:id="@+id/land_price_asset_improvement_cost"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/newLeadMarginBottom"
+            android:background="@drawable/round_corner"
+            android:hint="@string/editTextHint"
+            android:inputType="number"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:textSize="@dimen/newLeadEditTextSize" />
+
+
+        <!--House condition -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/land_price_house_condition" />
+        <RadioGroup
+            android:id="@+id/radioGunogoto_reputation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/newLeadMarginBottom"
+            android:background="@drawable/round_corner"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingLeft="20dp"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp">
+
+            <RadioButton
+                android:id="@+id/radioBtn_paka_house"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/colorGreen"
+                android:checked="false"
+                android:text="@string/land_price_paka_house" />
+
+            <RadioButton
+                android:id="@+id/radioBtn_adha_paka_bari"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:checked="false"
+                android:buttonTint="@color/colorGreen"
+                android:text="@string/land_price_adha_paka_house" />
+
+            <RadioButton
+                android:id="@+id/radioBtn_tin_shed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:checked="false"
+                android:buttonTint="@color/colorGreen"
+                android:text="@string/land_price_tin_shed_house" />
+
+        </RadioGroup>
+
+
+        <!--Total Asset Price related to business-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="18sp"
+                android:textColor="@color/greenDark"
+                android:layout_gravity="center"
+                android:text="@string/land_price_asset_price_related_to_business"
+                />
+            <TextView
+                android:id="@+id/land_price_asset_price_related_to_business"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:textSize="18sp"
+                android:textColor="@color/greenDark"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/saveBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/round_corner"
+            android:gravity="center"
+            android:text="Save"
+            android:onClick="saveBtn"
+            android:textSize="20sp" />
+
+
+    </LinearLayout>
+
+
+</ScrollView>

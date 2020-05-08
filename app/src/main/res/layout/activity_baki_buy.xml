@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:layout_margin="20dp"
+    android:gravity="center|top"
+    android:orientation="vertical"
+    tools:context=".loanInformation.tradeAndManufactoring.LoanCreditorActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:id="@+id/name"
+            android:text="Full Name"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:id="@+id/memberID"
+            android:text="Member ID: 0000"
+            />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/lineColor" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:gravity="center"
+            android:layout_marginBottom="20dp"
+            android:text="@string/biz_info_baki_buy"/>
+
+
+        <!--যাদের কাছে আপনি বাকিতে পণ্য/কাঁচামাল কিনেছেন, তারা আপনার কাছে এই মুহূর্তে কত টাকা পান?-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/baki_buy_total_baki" />
+        <EditText
+            android:id="@+id/baki_buy_total_baki"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/newLeadMarginBottom"
+            android:background="@drawable/round_corner"
+            android:hint="@string/editTextHint"
+            android:inputType="number"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:textSize="@dimen/newLeadEditTextSize" />
+
+
+        <!--এক বছরে আপনি কত শতাংশ পণ্য/কাঁচামাল বাকিতে কিনেছেন?-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/baki_buy_total_baki_percentage_this_year" />
+        <EditText
+            android:id="@+id/baki_buy_total_baki_percentage_this_year"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/newLeadMarginBottom"
+            android:background="@drawable/round_corner"
+            android:hint="@string/editTextHint"
+            android:inputType="number"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:textSize="@dimen/newLeadEditTextSize"
+            android:maxLength="3"/>
+
+
+
+
+
+        <!--পাওনাদারের প্রতি পাওনা-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textColor="@color/greenDark"
+                android:layout_gravity="center"
+                android:text="@string/baki_buy_paonadarer_kase_dena"
+                />
+            <TextView
+                android:id="@+id/baki_buy_paonadarer_kase_paona"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:textSize="20sp"
+                android:textColor="@color/greenDark"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/saveBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/round_corner"
+            android:gravity="center"
+            android:text="Save"
+            android:onClick="saveBtn"
+            android:textSize="20sp" />
+
+
+    </LinearLayout>
+
+
+</ScrollView>

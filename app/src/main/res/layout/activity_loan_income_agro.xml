@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:layout_margin="20dp"
+    android:gravity="center|top"
+    android:orientation="vertical"
+    tools:context=".loanInformation.agro.LoanIncomeAgroActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:id="@+id/name"
+            android:text="Full Name"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:id="@+id/memberID"
+            android:text="Member ID: 0000"
+            />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/lineColor" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:gravity="center"
+            android:layout_marginBottom="20dp"
+            android:text="@string/agro_info_income"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/agro_milk_production" />
+
+        <EditText
+            android:id="@+id/agro_milk_production"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/newLeadMarginBottom"
+            android:background="@drawable/round_corner"
+            android:hint="@string/editTextHint"
+            android:inputType="number"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:maxLength="10"
+            android:textSize="@dimen/newLeadEditTextSize" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/agro_avg_milk_sale" />
+
+        <EditText
+            android:id="@+id/agro_avg_milk_sale"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/newLeadMarginBottom"
+            android:background="@drawable/round_corner"
+            android:hint="@string/editTextHint"
+            android:inputType="number"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:maxLength="10"
+            android:paddingBottom="10dp"
+            android:textSize="@dimen/newLeadEditTextSize" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/agro_dairy_product_sale" />
+
+        <EditText
+            android:id="@+id/agro_dairy_product_sale"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/newLeadMarginBottom"
+            android:background="@drawable/round_corner"
+            android:hint="@string/editTextHint"
+            android:inputType="number"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:maxLength="10"
+            android:paddingBottom="10dp"
+            android:textSize="@dimen/newLeadEditTextSize" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/agro_live_stock_sale" />
+
+        <EditText
+            android:id="@+id/agro_live_stock_sale"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/newLeadMarginBottom"
+            android:background="@drawable/round_corner"
+            android:hint="@string/editTextHint"
+            android:inputType="number"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:maxLength="10"
+            android:paddingBottom="10dp"
+            android:textSize="@dimen/newLeadEditTextSize" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/agro_other_income" />
+
+        <EditText
+            android:id="@+id/agro_other_income"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/newLeadMarginBottom"
+            android:background="@drawable/round_corner"
+            android:hint="@string/editTextHint"
+            android:inputType="number"
+            android:paddingLeft="20dp"
+            android:maxLength="10"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:textSize="@dimen/newLeadEditTextSize" />
+
+        <!--Total Asset Price related to business-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textColor="@color/greenDark"
+                android:layout_gravity="center"
+                android:text="@string/income_based_income_total"
+                />
+            <TextView
+                android:id="@+id/agro_total_income"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:textSize="20sp"
+                android:textColor="@color/greenDark"
+                android:gravity="right"
+                android:layout_height="wrap_content"
+                />
+
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/saveBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/round_corner"
+            android:gravity="center"
+            android:text="Save"
+            android:onClick="saveBtn"
+            android:textSize="20sp" />
+
+
+    </LinearLayout>
+
+</ScrollView>

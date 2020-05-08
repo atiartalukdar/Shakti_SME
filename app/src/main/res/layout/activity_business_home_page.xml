@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".memberList.LoanAssessmentActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/businessInfoTop"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/memberCardView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="3dp"
+                    app:cardBackgroundColor="@color/background"
+                    app:cardCornerRadius="@dimen/cardviewRadius">
+
+                    <LinearLayout
+                        android:id="@+id/custom_member_item"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/biz_info_member_name"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="Atiar Talukdar"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                android:id="@+id/biz_info_member_photo"
+                                android:layout_width="70dp"
+                                android:layout_height="70dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:src="@drawable/dummy_profile" />
+
+                            <TextView
+                                android:id="@+id/biz_info_member_phone"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="10dp"
+                                android:drawableLeft="@drawable/ic_action_call"
+                                android:gravity="center"
+                                android:text="01917445888"
+                                android:textAlignment="center" />
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="2dp"
+                            android:layout_height="fill_parent"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginBottom="20dp"
+                            android:background="@color/lineColor" />
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="fill_parent"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="2"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/biz_info_member_id"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="Member: 001"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/biz_info_member_nid"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="NID: 3223263224" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="2"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:gravity="center|left"
+                                    android:orientation="vertical">
+
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="0dp"
+                                        android:layout_weight="1"
+                                        android:orientation="horizontal">
+
+                                        <TextView
+                                            android:id="@+id/biz_info_member_prokolpo"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="1"
+                                            android:gravity="center"
+                                            android:text="@string/biz_info_prokolpo"
+                                            android:textColor="#000000"
+                                            android:textSize="14sp" />
+
+                                        <TextView
+                                            android:id="@+id/biz_info_prokolpo"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="1"
+                                            android:gravity="center"
+                                            android:text=""
+                                            android:textSize="14sp"
+                                            android:textStyle="italic|bold" />
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="0dp"
+                                        android:layout_weight="1"
+                                        android:orientation="horizontal">
+
+                                        <TextView
+                                            android:id="@+id/biz_info_member_loan_amount"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="1"
+                                            android:gravity="center"
+                                            android:text="@string/biz_info_loan_amount"
+                                            android:textColor="#000000"
+                                            android:textSize="12sp" />
+
+                                        <TextView
+                                            android:id="@+id/biz_info_loan_amount"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="1"
+                                            android:gravity="center"
+                                            android:text=""
+                                            android:textColor="#000000"
+                                            android:textSize="13sp"
+                                            android:textStyle="italic" />
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="0dp"
+                                        android:layout_weight="1"
+                                        android:orientation="horizontal">
+
+                                        <TextView
+                                            android:id="@+id/biz_info_member_interest_rate"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="1"
+                                            android:gravity="center"
+                                            android:text="@string/biz_info_service_charge_percentage"
+                                            android:textColor="#000000"
+                                            android:textSize="12sp" />
+
+                                        <TextView
+                                            android:id="@+id/biz_info_service_charge_percentage"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="1"
+                                            android:gravity="center"
+                                            android:text=""
+                                            android:textSize="13sp"
+                                            android:textStyle="italic|bold" />
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="0dp"
+                                        android:layout_weight="1"
+                                        android:orientation="horizontal">
+
+                                        <TextView
+                                            android:id="@+id/biz_info_member_emi_type"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="1"
+                                            android:gravity="center"
+                                            android:text="@string/biz_info_kistir_dhoron"
+                                            android:textColor="#000000"
+                                            android:textSize="12sp"
+                                            android:textStyle="italic" />
+
+                                        <TextView
+                                            android:id="@+id/biz_info_kistir_dhoron"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="1"
+                                            android:gravity="center"
+                                            android:text=""
+                                            android:textSize="13sp"
+                                            android:textStyle="italic|bold" />
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="0dp"
+                                        android:layout_weight="1"
+                                        android:orientation="horizontal">
+
+                                        <TextView
+                                            android:id="@+id/biz_info_member_emi_duration"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="1"
+                                            android:gravity="center"
+                                            android:text="@string/biz_info_number_of_EMI"
+                                            android:textColor="#000000"
+                                            android:textSize="12sp" />
+
+                                        <TextView
+                                            android:id="@+id/biz_info_number_of_EMI"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="1"
+                                            android:gravity="center"
+                                            android:text=""
+                                            android:textSize="13sp"
+                                            android:textStyle="italic|bold" />
+                                    </LinearLayout>
+
+                                    <Button
+                                        android:id="@+id/uploadBizInfoToServer"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0dp"
+                                        android:layout_weight="1"
+                                        android:layout_gravity="right"
+                                        android:gravity="center"
+                                        android:background="@color/colorBlueDark"
+                                        android:text="@string/uploadToServer"
+                                        android:textColor="@color/colorWhite"
+                                        android:textSize="12sp" />
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+
+            </LinearLayout>
+
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:layout_marginTop="20dp"
+                android:background="#EDF5FF"
+                app:cardCornerRadius="@dimen/cardviewRadius">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="20dp"
+                        android:gravity="center"
+                        android:text="@string/members_biz_info_part1"
+                        android:textSize="25sp" />
+
+                    <bp.MyGridView
+                        android:id="@+id/biz_info_grid_view_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:numColumns="4"
+                        android:stretchMode="columnWidth"
+                        android:useDefaultMargins="true"
+                        tools:listitem="@layout/custom_grid_view_item">
+
+                    </bp.MyGridView>
+
+                </LinearLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="10dp"
+                android:background="#EDF5FF"
+                app:cardCornerRadius="@dimen/cardviewRadius">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:gravity="center"
+                        android:text="@string/members_biz_info_part2"
+                        android:textSize="25sp" />
+
+                    <GridView
+                        android:id="@+id/biz_info_grid_view_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:numColumns="4"
+                        android:useDefaultMargins="true"
+                        tools:alignmentMode="alignBounds"
+                        tools:listitem="@layout/custom_grid_view_item"
+                        tools:rowOrderPreserved="false">
+
+                    </GridView>
+
+                </LinearLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

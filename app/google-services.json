@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "908152894302",
+    "firebase_url": "https://shaktisme-18982.firebaseio.com",
+    "project_id": "shaktisme-18982",
+    "storage_bucket": "shaktisme-18982.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:908152894302:android:bdc5a2d7094f9129",
+        "android_client_info": {
+          "package_name": "com.sfdw.shaktisme"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "908152894302-qs16kg510un19dpm32mk9f4h2vpob4h8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.sfdw.shaktisme",
+            "certificate_hash": "cb987da77d8dc6017797b6ed54ca47a84b784aa3"
+          }
+        },
+        {
+          "client_id": "908152894302-nktgepd17efuli8se7pupddoht31dklp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCDT1eKX24i9QYIkkkynmyfNbnibSBZsuo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "908152894302-nktgepd17efuli8se7pupddoht31dklp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

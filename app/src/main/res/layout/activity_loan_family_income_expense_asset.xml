@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:layout_margin="20dp"
+    android:gravity="center|top"
+    android:orientation="vertical"
+    tools:context=".loanInformation.common.LoanFamilyIncomeExpenseAssetActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:id="@+id/name"
+            android:text="Full Name"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:id="@+id/memberID"
+            android:text="Member ID: 0000"
+            />
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/lineColor" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:gravity="center"
+            android:layout_marginBottom="20dp"
+            android:text="@string/family_income_details"/>
+
+        <!--Family Income-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/family_income_own_land_price" />
+        <EditText
+            android:id="@+id/family_income_own_land_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/newLeadMarginBottom"
+            android:background="@drawable/round_corner"
+            android:hint="@string/editTextHint"
+            android:inputType="number"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:maxLength="10"
+            android:paddingBottom="10dp"
+            android:textSize="@dimen/newLeadEditTextSize" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/family_income_own_house_price" />
+        <EditText
+            android:id="@+id/family_income_own_house_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/newLeadMarginBottom"
+            android:background="@drawable/round_corner"
+            android:hint="@string/editTextHint"
+            android:inputType="number"
+            android:paddingLeft="20dp"
+            android:maxLength="10"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:textSize="@dimen/newLeadEditTextSize" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/family_income_current_house_furniture_price" />
+        <EditText
+            android:id="@+id/family_income_current_house_furniture_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/newLeadMarginBottom"
+            android:background="@drawable/round_corner"
+            android:hint="@string/editTextHint"
+            android:inputType="number"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:maxLength="10"
+            android:paddingBottom="10dp"
+            android:textSize="@dimen/newLeadEditTextSize" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/family_income_other_family_assets_price" />
+        <EditText
+            android:id="@+id/family_income_other_family_assets_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/newLeadMarginBottom"
+            android:background="@drawable/round_corner"
+            android:hint="@string/editTextHint"
+            android:inputType="number"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:maxLength="10"
+            android:paddingBottom="10dp"
+            android:textSize="@dimen/newLeadEditTextSize" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/family_income_saving_deposit_org" />
+        <EditText
+            android:id="@+id/family_income_saving_deposit_org"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/newLeadMarginBottom"
+            android:background="@drawable/round_corner"
+            android:hint="@string/editTextHint"
+            android:inputType="number"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:maxLength="10"
+            android:textSize="@dimen/newLeadEditTextSize" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/family_income_family_other_income" />
+        <EditText
+            android:id="@+id/family_income_family_other_income"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/newLeadMarginBottom"
+            android:background="@drawable/round_corner"
+            android:hint="@string/editTextHint"
+            android:inputType="number"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:maxLength="10"
+            android:textSize="@dimen/newLeadEditTextSize" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/family_income_family_take_remitance" />
+        <EditText
+            android:id="@+id/family_income_family_take_remitance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/newLeadMarginBottom"
+            android:background="@drawable/round_corner"
+            android:hint="@string/editTextHint"
+            android:inputType="number"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:maxLength="10"
+            android:textSize="@dimen/newLeadEditTextSize" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="25dp">
+            <TextView
+                android:id="@+id/totalFamilyIncome"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:textSize="16sp"
+                android:textColor="@color/greenDark"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                />
+
+        </LinearLayout>
+
+
+
+        <!--Family Expanse-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/family_expanse_profit_spent" />
+        <EditText
+            android:id="@+id/family_expanse_profit_spent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/newLeadMarginBottom"
+            android:background="@drawable/round_corner"
+            android:hint="@string/editTextHint"
+            android:inputType="number"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:maxLength="10"
+            android:paddingBottom="10dp"
+            android:textSize="@dimen/newLeadEditTextSize" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/family_expanse_cost_rent_home" />
+        <EditText
+            android:id="@+id/family_expanse_cost_rent_home"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/newLeadMarginBottom"
+            android:background="@drawable/round_corner"
+            android:hint="@string/editTextHint"
+            android:inputType="number"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:maxLength="10"
+            android:paddingBottom="10dp"
+            android:textSize="@dimen/newLeadEditTextSize" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/family_expanse_cost_children_study" />
+        <EditText
+            android:id="@+id/family_expanse_cost_children_study"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/newLeadMarginBottom"
+            android:background="@drawable/round_corner"
+            android:hint="@string/editTextHint"
+            android:inputType="number"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:maxLength="10"
+            android:paddingBottom="10dp"
+            android:textSize="@dimen/newLeadEditTextSize" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/family_expanse_cost_medical" />
+        <EditText
+            android:id="@+id/family_expanse_cost_medical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/newLeadMarginBottom"
+            android:background="@drawable/round_corner"
+            android:hint="@string/editTextHint"
+            android:inputType="number"
+            android:paddingLeft="20dp"
+            android:maxLength="10"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:textSize="@dimen/newLeadEditTextSize" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/family_expanse_cost_other_bil" />
+        <EditText
+            android:id="@+id/family_expanse_cost_other_bil"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/newLeadMarginBottom"
+            android:background="@drawable/round_corner"
+            android:hint="@string/editTextHint"
+            android:inputType="number"
+            android:paddingLeft="20dp"
+            android:maxLength="10"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:textSize="@dimen/newLeadEditTextSize" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/family_expanse_cost_support" />
+        <EditText
+            android:id="@+id/family_expanse_cost_support"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/newLeadMarginBottom"
+            android:background="@drawable/round_corner"
+            android:hint="@string/editTextHint"
+            android:inputType="number"
+            android:paddingLeft="20dp"
+            android:maxLength="10"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:textSize="@dimen/newLeadEditTextSize" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/family_expanse_cost_outside_family" />
+        <EditText
+            android:id="@+id/family_expanse_cost_outside_family"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/newLeadMarginBottom"
+            android:background="@drawable/round_corner"
+            android:hint="@string/editTextHint"
+            android:inputType="number"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:maxLength="10"
+            android:paddingBottom="10dp"
+            android:textSize="@dimen/newLeadEditTextSize" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textColor="@color/greenDark"
+                android:layout_gravity="center"
+                android:text="মোট ব্যয়ঃ "
+                />
+            <TextView
+                android:id="@+id/totalFamilyExpance"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:textSize="20sp"
+                android:textColor="@color/greenDark"
+                android:gravity="right"
+                android:layout_height="wrap_content"
+                />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/saveBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/round_corner"
+            android:gravity="center"
+            android:text="Save"
+            android:onClick="saveBtn"
+            android:textSize="20sp" />
+
+
+    </LinearLayout>
+
+
+</ScrollView>

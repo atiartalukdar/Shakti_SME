@@ -1,0 +1,459 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:layout_margin="20dp"
+    android:gravity="center|top"
+    android:orientation="vertical"
+    tools:context=".kyc.KYCRelativeBoxActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+
+            <TextView
+                android:id="@+id/topText1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:gravity="center"
+                android:text="@string/guarantor_info"
+                android:textSize="30sp" />
+
+
+
+            <!--Name-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/name_tv"
+                android:text="@string/name" />
+
+            <EditText
+                android:id="@+id/ed_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/newLeadMarginBottom"
+                android:background="@drawable/round_corner"
+                android:hint="@string/editTextHint"
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:textSize="@dimen/newLeadEditTextSize" />
+
+            <!--Father's Name-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/father_name_tv"
+                android:text="@string/father_name" />
+
+            <EditText
+                android:id="@+id/ed_father_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/newLeadMarginBottom"
+                android:background="@drawable/round_corner"
+                android:hint="@string/editTextHint"
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:textSize="@dimen/newLeadEditTextSize" />
+
+            <!--ocupation -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/occupation_tv"
+                android:text="@string/ocupation" />
+
+            <EditText
+                android:id="@+id/ed_occupation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/newLeadMarginBottom"
+                android:background="@drawable/round_corner"
+                android:hint="@string/editTextHint"
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:textSize="@dimen/newLeadEditTextSize" />
+
+
+            <!--Relation -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/relation_tv"
+                android:text="@string/relation" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/newLeadMarginBottom"
+                android:background="@drawable/round_corner">
+
+                <Spinner
+                    android:id="@+id/relation_spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="9dp"
+                    android:layout_marginBottom="9dp"
+
+                    />
+
+
+            </LinearLayout>
+
+
+            <!--Address layout-->
+            <include
+                layout="@layout/custom_address_layout" />
+
+            <!--Mobile No-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/mobile_number_0" />
+
+            <EditText
+                android:id="@+id/ed_mobile_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/newLeadMarginBottom"
+                android:background="@drawable/round_corner"
+                android:hint="@string/editTextHint"
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp"
+                android:inputType="number"
+                android:paddingBottom="10dp"
+                android:textSize="@dimen/newLeadEditTextSize"
+                android:maxLength="11"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="50dp"
+                android:background="@color/lineColor" />
+            <TextView
+                android:id="@+id/topText2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:gravity="center"
+                android:text="@string/father_or_father_in_law__parmanent_address"
+                android:textSize="30sp" />
+            <RadioGroup
+                android:id="@+id/radioFatherOrFatherInLawsHouse"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/newLeadMarginBottom"
+                android:background="@drawable/round_corner"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp">
+
+                <RadioButton
+                    android:id="@+id/radioBtnFatherPlace"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/colorGreen"
+                    android:text="@string/fathers_place" />
+
+                <RadioButton
+                    android:id="@+id/radioBtnFatherInLawPlace"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:buttonTint="@color/colorGreen"
+                    android:text="@string/father_in_laws_place" />
+
+            </RadioGroup>
+
+
+            <!-- father or father in law Name-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/father_name_tv1"
+                android:text="@string/father_or_father_in_law_name" />
+
+            <EditText
+                android:id="@+id/ed_name_father_or_father_in_law"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/newLeadMarginBottom"
+                android:background="@drawable/round_corner"
+                android:hint="@string/editTextHint"
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:textSize="@dimen/newLeadEditTextSize" />
+
+            <!--Head of the family name-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/ed_family_head_name_father_or_father_in_law_tv"
+                android:text="@string/family_head_name" />
+
+            <EditText
+                android:id="@+id/ed_family_head_name_father_or_father_in_law"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/newLeadMarginBottom"
+                android:background="@drawable/round_corner"
+                android:hint="@string/editTextHint"
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:textSize="@dimen/newLeadEditTextSize" />
+
+            <!--ocupation -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/ed_occupation_father_or_father_in_law_tv"
+                android:text="@string/ocupation" />
+
+            <EditText
+                android:id="@+id/ed_occupation_father_or_father_in_law"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/newLeadMarginBottom"
+                android:background="@drawable/round_corner"
+                android:hint="@string/editTextHint"
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:textSize="@dimen/newLeadEditTextSize" />
+
+
+            <!--Address layout-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <!--house no-->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/house_no" />
+
+                <EditText
+                    android:id="@+id/ed_house_no_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/newLeadMarginBottom"
+                    android:background="@drawable/round_corner"
+                    android:hint="@string/editTextHint"
+                    android:inputType="number"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:textSize="@dimen/newLeadEditTextSize"
+                    android:maxLength="4"/>
+
+
+                <!--road no-->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/road_no" />
+
+                <EditText
+                    android:id="@+id/ed_road_no_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/newLeadMarginBottom"
+                    android:background="@drawable/round_corner"
+                    android:hint="@string/editTextHint"
+                    android:inputType="number"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:textSize="@dimen/newLeadEditTextSize"
+                    android:maxLength="4"/>
+
+                <!--road name -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/road_name" />
+
+                <EditText
+                    android:id="@+id/ed_road_name_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/newLeadMarginBottom"
+                    android:background="@drawable/round_corner"
+                    android:hint="@string/editTextHint"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:textSize="@dimen/newLeadEditTextSize" />
+
+
+                <!--house owner name-->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/home_owner_name" />
+
+                <EditText
+                    android:id="@+id/ed_house_owner_name_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/newLeadMarginBottom"
+                    android:background="@drawable/round_corner"
+                    android:hint="@string/editTextHint"
+                    android:inputType="text"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:textSize="@dimen/newLeadEditTextSize" />
+
+
+                <!--village-->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/village" />
+
+                <EditText
+                    android:id="@+id/ed_village_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/newLeadMarginBottom"
+                    android:background="@drawable/round_corner"
+                    android:hint="@string/editTextHint"
+                    android:inputType="text"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:textSize="@dimen/newLeadEditTextSize" />
+
+
+                <!--post office-->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/post_office" />
+
+                <EditText
+                    android:id="@+id/ed_post_office_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/newLeadMarginBottom"
+                    android:background="@drawable/round_corner"
+                    android:hint="@string/editTextHint"
+                    android:inputType="text"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:textSize="@dimen/newLeadEditTextSize" />
+
+                <!--thana / upojela-->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/thana_or_upojela" />
+
+                <EditText
+                    android:id="@+id/ed_thana_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/newLeadMarginBottom"
+                    android:background="@drawable/round_corner"
+                    android:hint="@string/editTextHint"
+                    android:inputType="text"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:textSize="@dimen/newLeadEditTextSize" />
+
+                <!--Jela-->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/district" />
+
+                <EditText
+                    android:id="@+id/ed_district_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/newLeadMarginBottom"
+                    android:background="@drawable/round_corner"
+                    android:hint="@string/editTextHint"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:textSize="@dimen/newLeadEditTextSize" />
+
+
+            </LinearLayout>
+
+            <!--Mobile No-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/mobile_number_0" />
+
+            <EditText
+                android:id="@+id/ed_mobile_number_father_or_father_in_law"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/newLeadMarginBottom"
+                android:background="@drawable/round_corner"
+                android:hint="@string/editTextHint"
+                android:paddingLeft="20dp"
+                android:inputType="number"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:textSize="@dimen/newLeadEditTextSize"
+                android:maxLength="11"/>
+
+        </LinearLayout>
+
+
+
+        <Button
+            android:id="@+id/saveBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/round_corner"
+            android:gravity="center"
+            android:text="Save"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+
+
+</ScrollView>

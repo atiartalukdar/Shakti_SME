@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="3dp"
+        android:paddingTop="10dp"
+        android:layout_gravity="center"
+        android:paddingBottom="10dp"
+        android:gravity="center"
+        android:id="@+id/ponner_mojud_item"
+        android:background="@drawable/round_corner2"
+        >
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:id="@+id/ponner_mojud_product_name"
+            android:text="Panir Motor"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:id="@+id/ponner_mojud_qty"
+            android:text="10"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/ponner_mojud_unit_price"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="10,000"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/ponner_mojud_total_price"
+            android:text="= 1,00,000"
+            android:layout_weight="2"
+            android:gravity="center"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/ponner_mojud_delete_item"
+            android:src="@drawable/ic_close_black_24dp"
+            />
+    </LinearLayout>
+
+</LinearLayout>

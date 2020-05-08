@@ -1,0 +1,464 @@
+﻿<resources>
+    <integer name="maxLine">2</integer>
+
+    <!-- Toolbar titles when navigation menu item is selected -->
+    <string name="app_name">Shakti SME</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="server_error">Server Error</string>
+
+    <!--Home Page Strings-->
+    <string name="lead">নতুন লিড তৈরী</string>
+    <string name="lead_list">লিড তালিকা</string>
+    <string name="lead_list_fail">লিড তালিকা (অনুত্তীর্ণ)</string>
+    <string name="org_name">প্রতিষ্ঠানের নাম</string>
+    <string name="member_list">সদস্য তালিকা</string>
+    <string name="loan_apply">ঋণের আবেদন</string>
+    <string name="loan_submitted">জমাকৃত আবেদন</string>
+    <string name="collection_schedule">কালেকশন সিডিউল</string>
+    <string name="my_info">আমার তথ্য</string>
+    <string name="logout">লগ আউট</string>
+
+
+    <!--New Lead add page Strings-->
+    <string name="nid_number">ভোটার আইডি নাম্বার</string>
+    <string name="nid">NID: </string>
+    <string name="mobile_number">মোবাইল নাম্বার - ১</string>
+    <string name="mobile_number_0">মোবাইল নাম্বার</string>
+    <string name="mobile_number_1">মোবাইল নাম্বার - ২</string>
+    <string name="applicant_name">আবেদনকারীর নাম</string>
+    <string name="name">নাম</string>
+    <string name="name_with_clone">নামঃ \u0020</string>
+    <string name="father_name">পিতার নাম</string>
+
+    <string name="mother_name">মাতার নাম</string>
+    <string name="passport_number">পাসপোর্ট নাম্বার</string>
+    <string name="driving_license">ড্রাইভিং লাইসেন্স নাম্বার</string>
+    <string name="income_holder">প্রধান উপার্জন কারীর নাম</string>
+    <string name="relation">সম্পর্ক </string>
+    <string name="relation_with_clone">সম্পর্কঃ \u0020 </string>
+
+
+    <string name="spouse_name">স্বামী/স্ত্রীর নাম</string>
+    <string name="ocupation">পেশা</string>
+    <string name="ocupation_with_clone">পেশাঃ\u0020</string>
+    <string name="ocupation_experience">পেশার অভিজ্ঞতা</string>
+    <string name="education_qualification">শিক্ষাগত যোগ্যতা</string>
+    <string name="education_qualification_with_clone">শিক্ষাগত যোগ্যতাঃ\u0020 </string>
+    <string name="gender">লিঙ্গ</string>
+    <string name="gender_male">পুরুষ</string>
+    <string name="gender_female">নারী</string>
+    <string name="date_of_birth">জন্ম তারিখ</string>
+    <string name="year">বছর</string>
+    <string name="age">বয়সঃ  \u0020</string>
+    <string name="month">মাস</string>
+    <string name="monthly">মাসিক</string>
+    <string name="day">দিন</string>
+    <string name="current_address">বরতমান ঠিকানা</string>
+    <string name="working_address">কর্মক্ষেত্রের ঠিকানা</string>
+    <string name="required_loan_amount">আবেদনকৃত ঋণের পরিমানঃ \u0020</string>
+    <string name="type_of_loan">ঋণ প্রস্তাবের ধরনঃ \u0020</string>
+    <string name="editTextHint">Enter Here</string>
+
+    <string name="ageErrorMin">বয়স ২৫ এর বেশি হতে হবে</string>
+    <string name="ageErrorMax">বয়স ৬৫ এর কম হতে হবে</string>
+
+    <string name="nidErrorAlreadyHasAccount">এই ভোটার আইডি দিয়ে সদস্য খোলা আছে</string>
+    <string name="nidError">অনুগ্রহ করে সঠিক ভোটার আইডি ইনপুট দিন</string>
+    <string name="loanAmountError">অনুগ্রহ করে লোনের পরিমান উল্লেখ করুন </string>
+
+    <string name="mobileErrorAlreadyHasAccount">এই মোবাইল নাম্বার দিয়ে সদস্য খোলা আছে</string>
+    <string name="mobileError">অনুগ্রহ করে ১১ অঙ্কের সঠিক মোবাইল নাম্বার ইনপুট দিন</string>
+
+    <string name="warning10LaksDifference">Warning ! Difference cant be 10,00,000tk</string>
+
+    <string name="pre_screening">প্রিস্ক্রীনিং </string>
+    <string name="pre_screening1">প্রিস্ক্রীনিঃ ১ - </string>
+    <string name="pre_screening2">প্রিস্ক্রীনিংঃ ২ -  </string>
+    <string name="pre_screening3">প্রিস্ক্রীনিংঃ ৩ - </string>
+    <string name="pre_screening_not_done">প্রিস্ক্রীনিং এখনো করা হয়নি</string>
+    <string name="pre_screening_not_done_code">0</string>
+    <string name="pre_screening_incomplete">প্রপ্রিস্ক্রীনিং অসম্পূর্ণ রয়েছে</string>
+    <string name="pre_screening_incomplete_code">1</string>
+    <string name="pre_screening_complete">প্রিস্ক্রীনিং সম্পূর্ণ হয়েছে</string>
+    <string name="pre_screening_upload">প্রিস্ক্রীনিং আপলোড</string>
+    <string name="pre_screening_complete_code">2</string>
+    <string name="title_activity_maps">Map</string>
+
+    <string name="prescreen_result_init">2</string>
+    <string name="prescreen_result_successfull">প্রিস্ক্রীনিং এ পাশ করেছে</string>
+    <string name="prescreen_result_unsuccessfull">প্রিস্ক্রীনিং এ ফেল করেছে</string>
+
+    <string name="leadID">Lead ID: </string>
+
+    <string name="loadingLeadOptions">লীড অপশন লোড করা হচ্ছে ...</string>
+    <string name="leadOptionsMultiplayer">/- গুনিতকে লিখতে হবে</string>
+    <string name="errorRequiredAmount">\u0020 টাকার মাঝে থাকতে হবে। </string>
+    <string name="errorPhotoUpload">আপনাকে অবশ্যই  ছবি যুক্ত করতে হবে।</string>
+    <string name="errorAddNewLead">অনুগ্রহ করে সব গুলো অপশন পুরন করুন।</string>
+
+    <string name="uploadToServer">তথ্য আপলোড করুন</string>
+    <string name="uploadKyc">তথ্য আপলোড নিশ্চিত করুন</string>
+    <string name="upload">আপলোড</string>
+    <string name="uploading">আপলোড করা হচ্ছে...</string>
+    <string name="downloading">ডাউনলোড করা হচ্ছে...</string>
+    <string name="pleaseWait">অনুগ্রহ করে অপেক্ষা করুন</string>
+    <string name="uploadSuccessful">আপলোড সফল হয়েছে।</string>
+    <string name="rejected">রিজেক্টেড</string>
+
+
+    <string name="memberID">Member ID: \u0020</string>
+    <string name="totalLoanAmount">মোট ঋণের পরিমাণঃ\u0020</string>
+    <string name="totalSavingsAmount">মোট সঞ্চয়ের পরিমাণঃ\u0020</string>
+    <string name="overdue">ওভারডিউঃ\u0020</string>
+    <string name="noLoan">এখনো কোন ঋণ দেওয়া হয়নাইঃ\u0020</string>
+    <string name="noSavings">এখনো  সঞ্চয় কোন  জমা  নেইঃ\u0020</string>
+    <string name="no">নাই\u0020</string>
+    <string name="yes">হ্যাঁ </string>
+    <string name="not">না </string>
+
+    <string name="businessInformation">ঋণ আবেদন</string>
+    <string name="personalInformation">KYC</string>
+
+    <string name="present_address">বর্তমান ঠিকানা </string>
+    <string name="parmanent_address">স্থায়ী ঠিকানা </string>
+    <string name="guarantor_info">পরিচয় দানকারীর তথ্য</string>
+    <string name="family_members">পরিবারের সদস্য তালিকা</string>
+    <string name="general_info">সাধারন তথ্য</string>
+    <string name="institute_info_detils">প্রতিস্থানের বিবরণী</string>
+
+    <string name="kyc_personal_info">ব্যাক্তিগত তথ্য</string>
+    <string name="kyc_relative_info">পরিচয় দানকারী</string>
+    <string name="kyc_present_address">বর্তমান ঠিকানা</string>
+    <string name="kyc_parmanent_address">স্থায়ী ঠিকানা</string>
+    <string name="kyc_business_info">ব্যাবসায়িক তথ্য</string>
+    <string name="kyc_business_detail">ব্যাবসার বিস্তারিত তথ্য</string>
+    <string name="kyc_family_member">পরিবারিক সদস্য তথ্য</string>
+
+
+    <string name="members_biz_info_part1">আর্থিক তথ্য (মাসিক)</string>
+    <string name="members_biz_info_part2">অন্যান্য প্রয়োজনীয় তথ্য</string>
+
+    <string name="members_business_information">সদস্যের ব্যবসায়িক তথ্য</string>
+    <string name="members_personal_information">সদস্যের ব্যক্তিগত তথ্য</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <string name="warning_lead_upload">লিড আপলোড অসম্পূর্ণ </string>
+    <string name="warning_contact_with_supervisor">লীড এখনো অনুমোদন হয়নি</string>
+    <string name="warning_user_not_passed_on_prescreening_1">পরবর্তী ধাপের জন্য উপযুক্ত নয়,</string>
+
+
+    <!--Peresent Address-->
+    <string name="house_no">বাড়ি নাম্বার</string>
+    <string name="road_no">সড়ক নাম্বার</string>
+    <string name="road_name">সড়কের নাম</string>
+    <string name="home_owner_name">বাড়িওালার নাম</string>
+    <string name="village">গ্রাম / মহল্লা</string>
+    <string name="post_office">পোস্ট অফিস</string>
+    <string name="thana_or_upojela">থানা / উপজেলা</string>
+    <string name="district">জেলা</string>
+    <string name="members_obosthan">সদস্যের অবস্থান</string>
+    <string name="rent_house">ভাড়া বাড়ি</string>
+    <string name="own_house">নিজ বাড়ি</string>
+    <string name="how_many_days_staying_in_this_area">এলাকায় কত বছর আছেন?</string>
+
+    <string name="father_or_father_in_law__parmanent_address">বাবা / শশুর বাড়ির স্থায়ী ঠিকানা</string>
+    <string name="fathers_place">বাবার বাড়ি</string>
+    <string name="father_in_laws_place">শশুর বাড়ি</string>
+    <string name="father_or_father_in_law_name">বাবার / শশুরের নাম</string>
+    <string name="family_head_name">পরিবার প্রধানের নাম</string>
+    <string name="marital_status">বৈবাহিক অবস্থাঃ\u0020</string>
+    <string name="marriad">বিবাহিত\u0020</string>
+    <string name="unmarriad">অবিবাহিত\u0020</string>
+
+    <string name="biz_address">ব্যবসা প্রতিষ্ঠানের / চাকুরিস্থলের নাম ও ঠিকানা\u0020</string>
+    <string name="biz_address_other">কারখানার / অন্য শাখার নাম ও ঠিকানা\u0020</string>
+    <string name="biz_name">প্রতিষ্ঠানের নাম\u0020</string>
+
+    <string name="biz_detils">ব্যবসা প্রতিষ্ঠানের বিবরণী \u0020</string>
+    <string name="biz_udpadito_ponner_name">উৎপাদিত পন্নের নাম\u0020</string>
+    <string name="biz_je_dhoroner_ponno_buy_and_sell_koren">যে ধরনের পন্য ক্রয় / বিক্রয় করেন \u0020</string>
+    <string name="biz_business_year">বর্তমান ব্যবসার বয়স \u0020</string>
+    <string name="biz_business_experience">ব্যবসায়ে মোট অভিজ্ঞতা\u0020</string>
+    <string name="biz_business_type">ব্যবসার প্রকৃতি \u0020</string>
+    <string name="biz_tread">ট্রেড \u0020</string>
+    <string name="biz_utpadon_mukhi">উৎপাদনমুখী\u0020</string>
+    <string name="biz_seba_mulok">সেবামুলক\u0020</string>
+    <string name="biz_worker_count">বর্তমান কর্মচারীর সংখ্যা \u0020</string>
+    <string name="biz_parmanent">স্থায়ী \u0020</string>
+    <string name="biz_temporary">খন্ডকালীন \u0020</string>
+    <string name="biz_total">মোট \u0020</string>
+    <string name="biz_parmanent_male_worker">স্থায়ী পরুষ কর্মচারী  \u0020</string>
+    <string name="biz_parmanent_female_worker">স্থায়ী মহিলা কর্মচারী \u0020</string>
+    <string name="biz_temporary_male_worker">খন্ডকালীন পরুষ কর্মচারী  \u0020</string>
+    <string name="biz_temporary_female_worker">খন্ডকালীন মহিলা কর্মচারী \u0020</string>
+
+    <string name="biz_next_12_years_plan_for_worker">আগামী ১২ মাসে কর্মচারী বৃদ্ধির পরিকল্পিত সংখ্যা \u0020</string>
+    <string name="biz_past_12_years_plan_for_worker">গত ১২ মাসে কি আপনার কর্মচারীর সংখ্যা বৃদ্ধি পেয়েছে নাকি হ্রাস পেয়েছে?</string>
+
+    <string name="biz_decrease">হ্রাস \u0020</string>
+    <string name="biz_increase">বৃদ্ধি \u0020</string>
+    <string name="biz_count">জন \u0020</string>
+    <string name="biz_decrease_number">কত জন বৃদ্ধি পেয়েছে \u0020</string>
+    <string name="biz_increase_number">কত জন হ্রাস পেয়েছে \u0020</string>
+    <string name="biz_increase_or_decrease_number">কত জন বৃদ্ধি / হ্রাস পেয়েছে \u0020</string>
+
+
+    <!--Business information HomePage-->
+    <string name="biz_info_prokolpo">প্রকল্পঃ \u0020</string>
+    <string name="biz_info_kistir_dhoron">কিস্তির ধরনঃ \u0020</string>
+    <string name="biz_info_loan_amount">ঋণের পরিমানঃ  \u0020</string>
+    <string name="biz_info_number_of_EMI">মেয়াদঃ \u0020</string>
+    <string name="biz_info_service_charge_percentage">সার্ভিস চার্জের হারঃ \u0020</string>
+
+    <string name="biz_info_income_details">আয় এর বিবরন \u0020</string>
+    <string name="biz_info_expense_details">ব্যয় এর বিবরন \u0020</string>
+    <string name="biz_info_bank_account_details">ব্যাঙ্ক অ্যাকাউন্টের তথ্যাদি</string>
+    <string name="biz_info_family_income_expense_details">পারিবারিক আয়,ব্যয় ও সম্পত্তির বিবরন</string>
+    <string name="biz_info_land_price">ভুসম্পত্তির মূল্য</string>
+    <string name="biz_info_others_loan">অন্যান্য বর্তমান ঋণ</string>
+    <string name="biz_info_papers_and_images">নথিপত্র ও ছবি</string>
+    <string name="biz_info_gunonoto_mullayon">গুনগত মুল্যায়ন</string>
+    <string name="biz_info_guarantor_information">জামিনদার এর তথ্য (পারিবারিক )</string>
+    <string name="biz_info_comments">মন্তব্য</string>
+
+
+    <string name="biz_info_sell">ব্যবসায় বিক্রয়</string>
+    <string name="biz_info_raw_meterials_price">কাঁচামাল/পন্যের দাম</string>
+    <string name="biz_info_others_cost">অন্যান্য খরচ</string>
+    <string name="biz_info_baki_sell">পাওনা/বাকিতে দেয়া</string>
+    <string name="biz_info_baki_buy">বাকিতে কেনা </string>
+    <string name="biz_info_ponner_mojud">কাঁচামাল/পন্যের মজুদ</string>
+    <string name="biz_info_fund_uttolon">অর্থ উত্তলন</string>
+    <string name="biz_info_decoration">সাজসরঞ্জামের মুল্য</string>
+    <string name="biz_info_others_income">অন্যান্য আয় </string>
+
+
+    <!--KYCBusinessDetailActivity gunogoto mullayon-->
+    <string name="gunogoto_reputation">এলাকায় সুনাম</string>
+    <string name="gunogoto_well">সন্তোষজনক</string>
+    <string name="gunogoto_average">চলনসই</string>
+    <string name="gunogoto_bad">অসন্তোষজনক</string>
+    <string name="gunogoto_behaviour">ব্যবহার </string>
+    <string name="gunogoto_business_attendance">ব্যাবসা উপস্থিতি (নিজে ব্যবসা প্রতিষ্ঠানে বসেন কিনা?)</string>
+    <string name="gunogoto_business_experience">ব্যবসায়ে মোট অবিজ্ঞতা </string>
+    <string name="gunogoto_is_employee">চাকুরীজীবী হলে কি ধরনের চাকুরি করেন?</string>
+    <string name="gunogoto_parmanent_employee">স্থায়ী</string>
+    <string name="gunogoto_temporary_employee">অস্থায়ী </string>
+    <string name="gunogoto_employee_type">চাকুরির ধরন</string>
+    <string name="gunogoto_employement_duration">কত বছর ধরে বর্তমান চাকুরিস্থলে আছেন? </string>
+    <string name="gunogoto_others_income_holders">পরিবারে অন্যান্য উপার্জনক্ষম ব্যাক্তি আছেন কি না? </string>
+    <string name="gunogoto_educational_qualification">শিক্ষাগত যোগ্যতা </string>
+    <string name="gunogoto_personal_vehicle">আপনার নিজের কোন যানবাহন আছে কিনা? </string>
+
+    <string name="comments">আপনার পর্যালোচনার ভিত্তিতে এই আবেদনকারীর মূল্যায়ন করুন । আপনার বিস্তারিত মন্তব্য শক্তির অন্যান্য ঋণ মূল্যায়নকরীদের সাহায্য করবে। </string>
+
+    <string name="guarantor_1">জামিনদার ১ (পরিবার থেকে)</string>
+    <string name="guarantor_2">জামিনদার ২ (পরিবারের বাহিরে)</string>
+    <string name="guarantor_bank_name">ব্যাংকের নাম</string>
+    <string name="guarantor_bank_account_no">একাউন্ট নং </string>
+    <string name="guarantor_monthly_income">মাসিক আয় </string>
+
+    <string name="biz_sell_last_12_months_er_kotha">গত ১২ মাসের কথা চিন্তা করে আবেদনকারীকে এই প্রশ্নগুলোর উত্তর দিতে বলুন ।</string>
+    <string name="biz_sell_good_months_sell">ব্যবসায় ভাল মাসে সর্বোচ্চ বিক্রয়ের পরিমান কত?</string>
+    <string name="biz_sell_good_months_number">গত বছরে এই রকম ভাল মাস কতগুলো ছিল?</string>
+    <string name="biz_sell_bad_months_sell">ব্যবসায় খারাপ মাসে সর্বনিম্ন বিক্রয়ের পরিমান কত?</string>
+    <string name="biz_sell_bad_months_number">গত বছরে এই রকম খারাপ মাস কতগুলো ছিল?</string>
+    <string name="biz_sell_other_months_sell">বাকি মাসগুলতে বিক্রয়ের পরিমান কত?</string>
+    <string name="biz_sell_other_months_number">বাকি মাসের সংখ্যা কত?</string>
+    <string name="biz_sell_average_monthly_sales">গড় মাসিক বিক্রয়ঃ </string>
+    <string name="biz_sell_mor_than_12_error">মমাস ১২ এর বেশি হতে পারবে না ।</string>
+
+
+    <string name="raw_meterials_most_expense_to_buy">কাঁচামাল/পণ্য কিনতে মাসে আপনি সর্বোচ্চ কত খরচ করেছেন?</string>
+    <string name="raw_meterials_most_expense_months">গত বছরে এইরকম সর্বোচ্চ খরচের মাস কতগুলো ছিল?</string>
+    <string name="raw_meterials_less_expense_to_buy">কাঁচামাল/পণ্য কিনতে মাসে আপনি সর্বনিম্ন কত খরচ করেছেন?</string>
+    <string name="raw_meterials_less_expense_months">গত বছরে এইরকম সর্বনিম্ন খরচের মাস কতগুলো ছিল?</string>
+    <string name="raw_meterials_other_months_expense_to_buy">বাকি মাস গুলোতে কাঁচামাল/পণ্যের উপর খরচের পরিমান কত?</string>
+    <string name="raw_meterials_other_months_number">বাকি মাসের সংখ্যা</string>
+    <string name="raw_meterials_average_monthly_sales">গড় মাসিক কাঁচামাল/পণ্যের দামঃ </string>
+
+    <string name="land_price_own_land">ভূ-সম্পত্তির নিজস্ব/লিজ হলে তার বর্তমান মূল্য</string>
+    <string name="land_price_rented_land">ভাড়াক্রিত সম্পত্তি হলে আগাম ভাড়া/এডভান্স এর কত বাকি আছে</string>
+    <string name="land_price_furniture_price">আসবাবপত্রের মূল্য</string>
+    <string name="land_price_machineries_price">যন্ত্রপাতির মূল্য</string>
+    <string name="land_price_others">অন্যান্য</string>
+    <string name="land_price_asset_improvement_cost">সম্পত্তির উন্নয়নে মোট কত টাকা খরচ করা হয়েছে?</string>
+    <string name="land_price_house_condition">বাড়ির অবস্থা</string>
+    <string name="land_price_paka_house">পাকা বাড়ি</string>
+    <string name="land_price_adha_paka_house">আধা পাকা বাড়ি</string>
+    <string name="land_price_tin_shed_house">টিন শেড</string>
+    <string name="land_price_asset_price_related_to_business">ব্যবসা প্রতিষ্টানের সাথে  সম্প্রিক্ত ভূ সম্পত্তির মূল্যঃ </string>
+
+    <string name="others_cost_hints">গড়ে ব্যবসায় যাবতীয় মাসিক খরচের কথা চিন্তা করে আবেদনকারীকে এই প্রশ্নগুলোর উত্তর দিতে বলুন।</string>
+    <string name="others_cost_business_place_rent">ব্যবসা প্রতিষ্টানের ভাড়া</string>
+    <string name="others_cost_employee_salary">কর্মচারীদের বেতন</string>
+    <string name="others_cost_traveling_cost">যাতায়াত খরচ</string>
+    <string name="others_cost_utility_bills">বিদ্যুৎ/ গ্যাস/ পানির বিল</string>
+    <string name="others_cost_repearing_cost"> মেরামতের খরচ</string>
+    <string name="others_cost_packaging_cost">    প্যাকেজিং খরচ</string>
+    <string name="others_cost_vat_tax">    কর/শুল্ক </string>
+    <string name="others_cost">    অন্যান্য খরচ</string>
+    <string name="others_cost_monthly">    মাসিক মোট অন্যান্য খরচঃ </string>
+
+
+    <!--pawna or bakite sell-->
+    <string name="baki_sell_">আবেদনকারীকে বাকিতে বিক্রি করা পণ্যের কথা চিন্তা করে এই প্রশ্নগুলর উত্তর দিতে বলুন । </string>
+    <string name="baki_sell_total_baki">যাদের কাছে আপনি বাকিতে পণ্য বিক্রি করেছেন তাদের কাছে আপনি এই মুহূর্তে কত পাওনা?</string>
+    <string name="baki_sell_total_baki_percentage_this_year">এক বছরে আপনি কত শতাংশ পণ্য বাকিতে বিক্রি করেন?</string>
+    <string name="baki_sell_kretader_kase_paona">ক্রেতাদের কাছে পাওনাঃ </string>s
+
+
+    <!--বাকিতে কেনা -->
+    <string name="baki_buy_">আবেদনকারীকে বাকিতে ক্রয় করা পণ্য/কাঁচামালের কথা চিন্তা করে এই প্রশ্নগুলর উত্তর দিতে বলুন । </string>
+    <string name="baki_buy_total_baki">যাদের কাছে আপনি বাকিতে পণ্য/কাঁচামাল কিনেছেন, তারা আপনার কাছে এই মুহূর্তে কত টাকা পান?</string>
+    <string name="baki_buy_total_baki_percentage_this_year">এক বছরে আপনি কত শতাংশ পণ্য/কাঁচামাল বাকিতে কিনেছেন?</string>
+    <string name="baki_buy_paonadarer_kase_dena">পাওনাদারের প্রতি দেনাঃ </string>
+
+
+    <!--কাঁচামাল/পন্যের মজুদ -->
+    <string name="ponner_mojud_">তার দোকান এবং গুদামের প্রধান পণ্যগুলোর তালিকা করুন ।</string>
+
+
+    <!--কাঁচামাল/পন্যের মজুদ -->
+    <string name="fund_uttolon_">আবেদনকারীকে পারিবারিক অথবা ব্যাক্তিগত ব্যাবহারের জন্য অর্থ উত্তোলন করা অর্থের কথা চিন্তা করে এই প্রশ্ন গুলোর উত্তর দিতে বলুন। </string>
+    <string name="fund_uttolon_for_owner">আপনার ও আপনার পরিবারের খরচ মেটানোর জন্য ব্যবসা থেকে মাসে কত টাকা উত্তোলন করেন?</string>
+    <string name="fund_uttolon_for_savings">মাঝারি থেকে দীঘমেয়াদি সঞ্চয়ের জন্য ব্যবসা থেকে মাসে কত টাকা উত্তোলন করেন?</string>
+    <string name="fund_uttolon_for_personal_reason">ব্যক্তিগত কারনে অথ উত্তোলনের পরিমানঃ </string>
+
+    <!-- পারিবারিক আয় এর বিবরন -->
+
+    <string name="family_income_details">পারিবারিক আয় / ব্যয় এর বিবরন</string>
+    <string name="family_income_own_land_price">নিজস্ব জমির মূল্য (যদি থাকে)</string>
+    <string name="family_income_own_house_price">নিজস্ব বাড়ির মূল্য (যদি থাকে)</string>
+    <string name="family_income_current_house_furniture_price">বর্তমান বাসার আসবাবপত্রের মূল্য</string>
+    <string name="family_income_other_family_assets_price">অন্যান্য পারিবারিক সম্পদের মূল্য </string>
+    <string name="family_income_saving_deposit_org">সংস্থায় জমাকৃত সঞ্চয় (যদি থাকে)</string>
+    <string name="family_income_family_other_income">পরিবারের অন্যান্য খাত হতে আয় </string>
+    <string name="family_income_family_take_remitance">বিদেশ থেকে প্রাপ্ত রেমিটেন্স </string>
+
+    <!-- পারিবারিক ব্যয় এর বিবরন -->
+    <string name="family_expanse_profit_spent">ব্যবসা হতে লাভের যে পরিমান পরিবারের জন্য ব্যায় হয়</string>
+    <string name="family_expanse_cost_rent_home">বাড়িভাড়া বাবদ খরচ</string>
+    <string name="family_expanse_cost_children_study">ছেলেমেয়ের পড়ালেখার খরচ</string>
+    <string name="family_expanse_cost_medical">চিকিৎসা বাবদ খরচ</string>
+    <string name="family_expanse_cost_other_bil">বিভিন্ন বিল পরিশোধ বাবদ খরচ</string>
+    <string name="family_expanse_cost_support">পরিবারের ভরনপোষন বাদে অন্যকোন খরচ</string>
+    <string name="family_expanse_cost_outside_family">পরিবারের বাইরে অন্যকোন খরচ </string>
+
+
+    <!-- অন্যান্য আয় -->
+    <string name="other_income_head">অন্যান্য আয়</string>
+    <string name="other_income_source">আয়ের উৎস</string>
+    <string name="other_monthly_income">মাসিক আয় </string>
+    <string name="other_income_heading">ব্যবসা ছাড়া আবেদনকারীর আয়ের অন্যান্য সকল উৎসের বিবরণ দিন। যে সকল আয়ের উৎসের উপর উনার নিয়ন্ত্রণ আছে এবং ঋণের কিস্তি পরিশোধ
+        করার জন্য ব্যবহার করতে পারবেন, শুধুমাত্র সেই উৎসগুলো তালিকা করুন।</string>
+
+    <!-- অন্যান্য বর্তমান ঋন -->
+    <string name="running_loan">অন্যান্য বর্তমান ঋন</string>
+    <string name="running_loan_source"> ঋনের সূত্র</string>
+    <string name="running_loan_installment">মাসিক কিস্তি </string>
+    <string name="running_loan_is_running">চলমান </string>
+
+    <!-- ব্যাংক একাউন্ট সম্পর্কিত তথ্যাদি -->
+    <string name="bank_account_releted_info">ব্যাংক একাউন্ট সম্পর্কিত তথ্যাদি  </string>
+    <string name="bank_account_name">ব্যাংক একাউন্ট এর নাম </string>
+    <string name="bank_name">ব্যাংক এর নাম </string>
+    <string name="bank_branch_name">ব্যাংক এর শাখার নাম </string>
+    <string name="bank_branch_address">ব্যাংক এর শাখার ঠিকানা </string>
+    <string name="bank_account_no"> ব্যাংক একাউন্ট নম্বর </string>
+    <string name="bank_routing_no">রাউটিং নম্বর </string>
+    <string name="bank_account_type">একাউন্ট এর প্রকার </string>
+    <string name="mobile_account_no">মোবাইল ব্যাঙ্কিং একাউন্ট নং (শুধুমাত্র বিকাশ) </string>
+    <string name="bank_cash_in_hand">ক্যাশ ইন হ্যান্ড </string>
+    <string name="bank_cash_at_bank">ব্যাংক এ জমাকৃত টাকার পরিমান  </string>
+    <string name="bank_account_image">ব্যাংক একাউন্ট এর ছবি আপলোড করুন </string>
+
+
+    <!-- আয় এর বিবরন -->
+    <string name="income_based_income_details">আয় এর বিবরন</string>
+    <string name="income_based_income_source">আয়ের খাত</string>
+    <string name="income_based_basic_salary">মাসিক মূল বেতন (Basic)</string>
+    <string name="income_based_Gross_salary">মাসিক মোট বেতন (Gross)</string>
+    <string name="income_based_thome_salary">মাসিক নীট বেতন (Take home salary)</string>
+    <string name="income_based_net_salary">মাসিক নীট বেতন (Take home salary)</string>
+    <string name="income_based_receive_salary_bank">বেতন কি ব্যাঙ্ক একাউন্ট এর মাধ্যমে পান কি না</string>
+    <string name="income_based_job_sector">কি ধরনের প্রতিষ্ঠানে চাকরী করেন?</string>
+    <string name="income_based_job_type_govt">সরকারি</string>
+    <string name="income_based_job_type_non_govt">বেসরকারি</string>
+    <string name="income_based_job_type">কি ধরনের চাকুরি করেন?</string>
+    <string name="income_based_income_on_house_rent">বাড়ি ভাড়া হতে মাসিক গড় আয়</string>
+    <string name="income_based_income_on_house_age">বাড়ির বয়স কত? </string>
+    <string name="income_based_income_on_other">অন্যান্য</string>
+    <string name="income_based_income_total">মোট আয়</string>
+
+
+    <!-- ব্যায় এর বিবরন -->
+    <string name="income_based_expence_details">ব্যায় এর বিবরন </string>
+    <string name="income_based_expence_source">ব্যায় এর খাত</string>
+    <string name="income_based_expence_house_maintenance">বাড়ির রক্ষনাবেক্ষ এর কাজে মাসিক গড় ব্যায় এর পরিমান</string>
+    <string name="income_based_expence_house_development">বাড়ির উন্নয়ন এর কাজে মাসিক গড় ব্যায় এর পরিমান</string>
+    <string name="income_based_expence_utility_bill">বাড়ির পানি, গ্যাস, বিদ্যুৎ পয়ঃনিষ্কাশন বাবদ মাসিক গড় ব্যায় এর পরিমান</string>
+    <string name="income_based_expence_home_tax">বাড়ির খাজনা প্রদান বাবদ মাসিক গড় ব্যায়</string>
+    <string name="income_based_expence_on_other">অন্যান্য</string>
+    <string name="income_based_expence_total">মোট ব্যায়ঃ</string>
+
+
+    <string name="income_expence_yes">হ্যাঁ</string>
+    <string name="income_expence_no">না </string>
+
+
+    <!-- রেমিটেন্স  এর তথ্য-->
+
+    <string name="remittance_info">রেমিটেন্স এর তথ্য </string>
+    <string name="remittance_nrb_name">প্রবাসি ব্যক্তির নাম </string>
+    <string name="remittance_relation_applicant">প্রবাসি ব্যক্তির সাথে আবেদন কারীর সম্পর্ক</string>
+    <string name="remittance_amount">রেমিটেন্স এর পরিমান</string>
+    <string name="remittance_receiver_name">রেমিটেন্স গ্রহণকারীর নাম</string>
+    <string name="remittance_country_code">প্রবাসি কোন দেশে থাকেন</string>
+    <string name="remittance_nrb_day"> প্রবাসে কত বছর অবস্থান করছেন?</string>
+    <string name="remittance_is_valid_visa_permit">প্রবাসি ব্যক্তির বৈধ ভিসা/আকামা বা ওয়ার্ক পারমিট আছে </string>
+    <string name="remittance_work_permit_file"> বৈধ ভিসা/আকামা বা ওয়ার্ক পারমিট এর ছবি</string>
+    <string name="remittance_visa_date_line"> বৈধ ভিসার মেয়াদ উত্তীর্ণ এর তারিখ</string>
+    <string name="remittance_work_permit_date_line">ওয়ার্ক পারমিট এর মেয়াদ উত্তীর্ণ এর তারিখ </string>
+    <string name="remittance_org_name_in_nrb">প্রবাসি ব্যক্তির প্রতিষ্ঠানের নাম</string>
+    <string name="remittance_nrb_passport">প্রবাসি ব্যক্তির পাসপোর্ট নং</string>
+    <string name="remittance_slip">রেমিটেন্স স্লিপ </string>
+
+
+    <!-- এগ্রো আয় এর তথ্য-->
+    <string name="agro_info_income">আয় এর বিবরন </string>
+    <string name="agro_milk_production">মাসিক উৎপাদিত দুধের পরিমান</string>
+    <string name="agro_avg_milk_sale">মাসিক উৎপাদিত দুধের বিক্রির গড় আয়</string>
+    <string name="agro_dairy_product_sale">দুগ্ধ জাতীয় অন্য পণ্য উৎপাদন ও বিক্রয় করা হলে, বিক্রয় হতে মাসিক আয় </string>
+    <string name="agro_live_stock_sale">গবাদি পশু বিক্রয় হতে মাসিক গড় আয়</string>
+    <string name="agro_other_income">অন্যান্য আয়</string>
+
+    <!-- এগ্রো ব্যায় এর তথ্য-->
+    <string name="agro_info_expense"> ব্যায় এর বিবরন </string>
+    <string name="agro_cattle_feed_cost">গবাদিপশুর খাবার ক্রয় করতে মাসিক গড় ব্যায়</string>
+    <string name="agro_veterinary_cost">গবাদি পশুর ঔষধ/ডাক্তার/মেডিকেল এর পেছনে মাসিক গড় ব্যায়</string>
+    <string name="agro_salary_Paid">গবাদিপশুর রক্ষনাবেক্ষনের কাজে নিয়োজিত কর্মীর বেতন ভাতার পেছনে মাসিক গড় ব্যায় </string>
+    <string name="agro_live_stock_purchase">গবাদিপশু ক্রয় এর পেছনে মাসিক গড় ব্যায়</string>
+    <string name="agro_dairy_production_cost">দুগ্ধ জাতীয় অন্য কোন পণ্য উতপাদন করে থাকলে মাসিক উতপাদন খরচের গড়</string>
+    <string name="agro_other_cost">অন্যান্য ব্যায়</string>
+
+    <!-- এগ্রো গবাদিপশুর মূল্য-->
+    <string name="agro_live_stock"> গবাদিপশুর মূল্য </string>
+    <string name="agro_cow_shed_cost">গবাদি পশুর থাকার ছাউনীর মূল্য</string>
+    <string name="agro_no_of_cow">পূর্ণবয়স্ক গরুর সংখ্যা</string>
+    <string name="agro_cow_price">পূর্ণবয়স্ক গরুর মূল্য </string>
+    <string name="agro_no_of_calves">বাছুরের সংখ্যা</string>
+    <string name="agro_calves_price">বাছুরের মূল্য</string>
+    <string name="agro_no_of_cattle">অন্যান্য গবাদিপশুর সংখ্যা</string>
+    <string name="agro_cattle_price">অন্যান্য গবাদিপশুর মূল্য</string>
+
+    <string name="doc_type">ডকুমেন্ট টাইপঃ </string>
+    <string name="doc_comments">নামঃ </string>
+
+
+</resources>
